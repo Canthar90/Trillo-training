@@ -204,3 +204,54 @@
     padding: 2.5rem;
 
 }
+
+//////////////////////////////
+// Gallery
+
+.gallery {
+    display:flex;
+
+    &__photo{
+        width: 100%;
+        display: block;
+    }
+}
+
+//////////////////////
+// Hotel overwiew
+
+.owerview {
+    display: flex;
+
+
+    &__heaidng {
+
+    }
+
+    &__stars {
+        margin-right: auto;
+    }
+    
+    &__stars-icon,
+    &__location-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+        
+    }
+
+    &__rating {
+
+    }
+
+    &__rating-count{
+
+    }
+
+    &__rating-average {
+
+    }
+}

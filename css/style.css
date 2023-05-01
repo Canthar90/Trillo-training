@@ -193,3 +193,18 @@ body {
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.owerview {
+  display: flex; }
+  .owerview__stars {
+    margin-right: auto; }
+  .owerview__stars-icon, .owerview__location-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
