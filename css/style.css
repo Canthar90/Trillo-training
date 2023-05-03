@@ -58,6 +58,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.35em) {
+    .header {
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 13rem; } }
 
 .content {
   display: flex; }
@@ -86,6 +91,9 @@ body {
     .detail {
       padding: 2rem;
       margin-right: 3; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      flex-direction: column; } }
 
 .description {
   font-size: 1.4rem;
@@ -94,6 +102,14 @@ body {
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 3rem; } }
 
 .user-reviews {
   flex: 1;
@@ -110,6 +126,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.35em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%; } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -225,11 +245,20 @@ body {
       .side-nav__link:link, .side-nav__link:visited {
         justify-content: center;
         padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1.5rem .5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__icon {
+        margin: 0;
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .legal {
   font-size: 1.2rem;
@@ -256,6 +285,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .owerview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
   .owerview__stars {
     margin-right: auto;
     display: flex; }
@@ -279,13 +312,22 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .owerview__rating {
+        padding: 0 1.5rem; } }
   .owerview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -2px; }
+    @media only screen and (max-width: 37.5em) {
+      .owerview__rating-average {
+        font-size: 1.8rem; } }
   .owerview__rating-count {
     font-size: .8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .owerview__rating-count {
+        font-size: .5rem; } }
 
 .btn-inline {
   border: none;
